@@ -2,7 +2,7 @@ import { useState } from "react"
 import Layout from "./layout/index"
 import LognPage from "./views/login/index"
 function App() {
-  const [isAuth,setIsAuth]= useState(true)
+  const [isAuth,setIsAuth]= useState<boolean>(true)
 
   return (
     <>
