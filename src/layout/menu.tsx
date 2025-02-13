@@ -1,4 +1,3 @@
-import React from 'react'
 import { BasketIcons, BuildingIcons, HomeIcons, OpenAIIcons, PersonalDetailsIcons, PriceIcons, QrcodeIcons, SaleIcons, SettingsIcons, TimeSheetIcons, WareHouseIcons } from '../components/icons'
 
 const menu = [

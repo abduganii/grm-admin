@@ -1,4 +1,4 @@
-import Container from "@/components/container/index";
+import Container from "../../components/container/index";
 
 export default function LognPage({onClick}:any) {
   return (

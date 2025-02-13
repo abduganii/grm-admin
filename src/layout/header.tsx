@@ -23,8 +23,8 @@ export default function Header() {
               </p>
           </div>
           <div>
-              <p className className="text-[14px] leading-[17px] text-[#212121]">11:58</p>
-              <p className className="text-[14px] leading-[17px] text-[#212121]">Ташкент</p>
+              <p  className="text-[14px] leading-[17px] text-[#212121]">11:58</p>
+              <p  className="text-[14px] leading-[17px] text-[#212121]">Ташкент</p>
             
           </div>
     </div>
