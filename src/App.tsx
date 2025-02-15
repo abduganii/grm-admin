@@ -1,14 +1,10 @@
-import { useState } from "react"
-import Layout from "./layout/index"
-import LognPage from "./views/login/index"
+import { AuthorizedRoutes } from "./router";
 function App() {
-  const [isAuth,setIsAuth]= useState<boolean>(true)
-
   return (
     <>
-      {isAuth ? <><Layout>children</Layout></> : <LognPage onClick={()=>setIsAuth(true) } />}
+      <AuthorizedRoutes />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

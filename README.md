@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+# Next.js Tailwind TypeScript Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully-featured admin dashboard built with Next.js, Tailwind CSS, and TypeScript. This project offers a robust, scalable, and responsive interface for managing your application data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Next.js**: Leveraging file-based routing and server-side rendering for high performance.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development and responsive design.
+- **TypeScript**: Static type checking for improved code quality and maintainability.
+- **Dashboard Components**: Includes an overview dashboard, user management, analytics, and more.
+- **Modern UI/UX**: Clean, intuitive interface for efficient administration.
+- **API Integration**: Ready-to-use API endpoints for real-time data interactions.
+- **(Optional) Authentication**: Sample authentication flows using Next.js API routes.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (v14 or later)
+- npm, Yarn, or pnpm
+- Git
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Clone the Repository**
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+   ```bash
+   git clone https://git.calypso.uz/calypso1/growz/new_growz_admin.git
+   cd new_growz_admin
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. **Install dependencies**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+    
+3. **Configure Environment Variables**
+
+    ```env
+    NEXT_PUBLIC_BASE_URL=
+    NEXT_PUBLIC_CDN_URL=
+    ```
+4. **Run the project**
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    ```

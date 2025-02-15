@@ -1,9 +1,16 @@
+import clsx from "clsx";
+import { FC, PropsWithChildren } from "react";
 
+interface ContainerProps extends PropsWithChildren {
+  className?: string;
+}
 
-export default function Container({className,children}:any) {
+const Container: FC<ContainerProps> = ({ className, children }) => {
   return (
-    <div className={`${className && className} w-full max-w-[1140px] mx-auto px-[15px]`}>
+    <div className={clsx("w-full max-w-[1140px] mx-auto px-[15px]", className)}>
       {children}
     </div>
-  )
-}
+  );
+};
+
+export default Container;
