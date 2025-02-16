@@ -1,11 +1,13 @@
+import { TopSiteType } from "@/type";
+
 import { File1Icons, FileIcons, PlusIcons, SearchAIIcons } from "../icons";
 
-export default function TopSite() {
+export default function TopSite({ searchPlaceholder }: TopSiteType) {
   return (
     <div className="pl-[51px] pr-[41px] py-[10px] flex gap-2 items-center border-b border-[#C3C3BB]">
       <SearchAIIcons />
       <input
-        placeholder="search"
+        placeholder={searchPlaceholder || "search"}
         className="text-[16px] w-full leading-[19px] text-[#212121]"
       />
 

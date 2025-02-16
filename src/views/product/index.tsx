@@ -5,6 +5,7 @@ import {
 } from "@tanstack/react-table";
 import { useState } from "react";
 
+import FilterSite from "@/components/filter-site";
 import GlobalTable from "@/components/global-table";
 import { DoteIcons } from "@/components/icons";
 import TopSite from "@/components/top-site";
@@ -101,6 +102,7 @@ export default function Page() {
   return (
     <>
       <TopSite />
+      <FilterSite />
       <GlobalTable
         totalPages={totalPages}
         table={table}

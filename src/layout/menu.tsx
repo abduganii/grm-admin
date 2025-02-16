@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import {
   BasketIcons,
   BuildingIcons,
@@ -16,14 +18,17 @@ const menu = [
   {
     id: 1,
     icons: <HomeIcons />,
+    link: "/dashboard",
   },
   {
     id: 2,
     icons: <BuildingIcons />,
+    link: "/product",
   },
   {
     id: 3,
     icons: <BasketIcons />,
+    link: "/order",
   },
   {
     id: 4,
@@ -51,6 +56,7 @@ const menu = [
   },
 ];
 export default function Menu() {
+  const navigate = useNavigate();
   return (
     <div className="w-[104px] h-screen flex justify-between flex-col  border-r bg-[#E0DFD6]  border-[#C3C3BB]">
       <div>
@@ -60,6 +66,11 @@ export default function Menu() {
         />
         {menu?.map((e) => (
           <div
+            onClick={() => {
+              if (e?.link) {
+                navigate(e?.link);
+              }
+            }}
             className={` hover:bg-[#D6D6CD] border-transparent cursor-pointer border-b hover:border-[#E0DFD6] text-center flex items-center justify-center p-[20px]`}
             key={e?.id}
           >
