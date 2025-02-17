@@ -3,8 +3,6 @@ import { Table } from "@tanstack/react-table";
 import { LeftIcons, RightIcons } from "@/components/icons";
 import { PaginationState } from "@/type";
 
-import { Button } from "../ui/button";
-
 type GlobalTableProps<TData> = {
   table: Table<TData>;
   totalPages: number;
@@ -59,30 +57,30 @@ export default function GlobalTable<TData>({
         </tbody>
       </table>
       <div className="flex justify-center items-center gap-[10px] mt-4">
-        <Button
+        <button
           className="border-[#D1D0C8] shadow-none rounded-none border-[1px] w-[36px] h-[36px] flex items-center justify-center bg-[#E0DFD6] hover:bg-[#D1D0C8]"
           onClick={() => table.previousPage()}
           disabled={!table.getCanPreviousPage()}
         >
           <LeftIcons />
-        </Button>
+        </button>
         {[...Array(totalPages)].map((_, index) => (
-          <Button
+          <button
             key={index}
             className={`border-[#D1D0C8] shadow-none text-black rounded-none border-[1px] w-[36px] h-[36px] flex items-center justify-center 
              ${pagination.pageIndex === index ? "bg-black text-white" : "bg-[#E0DFD6] hover:bg-[#D1D0C8]"}`}
             onClick={() => table.setPageIndex(index)}
           >
             {index + 1}
-          </Button>
+          </button>
         ))}
-        <Button
+        <button
           className="border-[#D1D0C8] shadow-none rounded-none border-[1px] w-[36px] h-[36px] flex items-center justify-center bg-[#E0DFD6] hover:bg-[#D1D0C8]"
           onClick={() => table.nextPage()}
           disabled={!table.getCanNextPage()}
         >
           <RightIcons />
-        </Button>
+        </button>
       </div>
     </div>
   );

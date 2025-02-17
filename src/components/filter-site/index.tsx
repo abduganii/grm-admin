@@ -1,17 +1,16 @@
 import { CheckIcons, ExportIcons, FilterIcons, RemoveIcons } from "../icons";
-import { Button } from "../ui/button";
 
 export default function FilterSite() {
   return (
     <div className="flex bg-[#E0DFD6]  gap-1 px-[39px] py-[14px] border-b border-solid border-[#C3C3BB] ">
-      <Button className="border-[#D1D0C8] text-black text-[16px] py-[9px] px-[14px] leading-[19px]  gap-1 shadow-none rounded-none border-[1px]  flex items-center justify-center bg-[#E0DFD6] hover:bg-[#D1D0C8]">
+      <button className="border-[#D1D0C8] text-black text-[16px] py-[9px] px-[14px] leading-[19px]  gap-1 shadow-none rounded-none border-[1px]  flex items-center justify-center bg-[#E0DFD6] hover:bg-[#D1D0C8]">
         <FilterIcons /> Фильтр
-      </Button>
-      <Button className="border-[#D1D0C8] text-black text-[16px] py-[9px] px-[14px] leading-[19px]  gap-1 shadow-none rounded-none border-[1px]  flex items-center justify-center bg-[#E0DFD6] hover:bg-[#D1D0C8]">
+      </button>
+      <button className="border-[#D1D0C8] text-black text-[16px] py-[9px] px-[14px] leading-[19px]  gap-1 shadow-none rounded-none border-[1px]  flex items-center justify-center bg-[#E0DFD6] hover:bg-[#D1D0C8]">
         <span className="opacity-45">Сортировка по:</span>
         Алфавита
         <FilterIcons />
-      </Button>
+      </button>
       <div className="border-[#D1D0C8] text-black px-[14px]   gap-4 shadow-none rounded-none border-[1px]  flex items-center justify-center bg-[#DBDAD1]">
         <p className="opacity-45 text-[#212121] flex items-center gap-[2px]">
           <CheckIcons /> Все:
@@ -21,12 +20,12 @@ export default function FilterSite() {
         <p className="text-[14px] leading-[19px]">3479 $</p>
         <p className="text-[14px] leading-[19px]">22 443 280 560 сум</p>
       </div>
-      <Button className="border-[#D1D0C8] ml-auto text-black text-[16px] py-[9px] px-[14px] leading-[19px]  gap-1 shadow-none rounded-none border-[1px]  flex items-center justify-center bg-[#E0DFD6] hover:bg-[#D1D0C8]">
+      <button className="border-[#D1D0C8] ml-auto text-black text-[16px] py-[9px] px-[14px] leading-[19px]  gap-1 shadow-none rounded-none border-[1px]  flex items-center justify-center bg-[#E0DFD6] hover:bg-[#D1D0C8]">
         <ExportIcons /> Экспорт
-      </Button>
-      <Button className="border-[#D1D0C8] text-black text-[16px] py-[9px] px-[14px] leading-[19px]  gap-1 shadow-none rounded-none border-[1px]  flex items-center justify-center bg-[#E0DFD6] hover:bg-[#D1D0C8]">
+      </button>
+      <button className="border-[#D1D0C8] text-black text-[16px] py-[9px] px-[14px] leading-[19px]  gap-1 shadow-none rounded-none border-[1px]  flex items-center justify-center bg-[#E0DFD6] hover:bg-[#D1D0C8]">
         <RemoveIcons /> Убрать
-      </Button>
+      </button>
     </div>
   );
 }

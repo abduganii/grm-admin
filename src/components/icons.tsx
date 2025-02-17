@@ -652,3 +652,43 @@ export const DownloadIcons = () => {
     </svg>
   );
 };
+
+export const BusketIcons = () => {
+  return (
+    <svg
+      width="16"
+      height="17"
+      viewBox="0 0 16 17"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3.99984 11.8333C3.26346 11.8333 2.6665 12.4303 2.6665 13.1667C2.6665 13.903 3.26346 14.5 3.99984 14.5C4.73622 14.5 5.33317 13.903 5.33317 13.1667C5.33317 12.4303 4.73622 11.8333 3.99984 11.8333ZM3.99984 11.8333H11.3332M3.99984 11.8333V2.5H2.6665M11.3332 11.8333C10.5968 11.8333 9.99984 12.4303 9.99984 13.1667C9.99984 13.903 10.5968 14.5 11.3332 14.5C12.0695 14.5 12.6665 13.903 12.6665 13.1667C12.6665 12.4303 12.0695 11.8333 11.3332 11.8333ZM3.99984 3.83333L8.00317 4.11933M12.7618 8.50133L12.6665 9.16667H3.99984M9.99984 4.5H13.9998M11.9998 2.5V6.5"
+        stroke="#212121"
+        stroke-width="1.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const XIcons = () => {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15 5L5 15M5 5L15 15"
+        stroke="#212121"
+        stroke-width="1.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};

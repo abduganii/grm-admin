@@ -32,6 +32,7 @@ const menu = [
   },
   {
     id: 4,
+    link: "/publish-product",
     icons: <WareHouseIcons />,
   },
   {
