@@ -19,3 +19,7 @@ button {
 .colm2 {
   width: calc((100% - 36px) / 4);
 }
+
+.clom3 {
+  width: calc((100% - 16px) / 3);
+}
