@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <div className="w-full">
       <TopSite />
-      <div className="flex gap-[10px] p-[5px]">
+      <div className="flex  items-start gap-[10px] p-[5px]">
         <Action />
         <List />
       </div>
